@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Para mi Isabela 💗</title>
+<style>
+:root{--pink:#f7b7d2;--deep:#9d174d;--pale:#fff1f7;--cream:#fffafd}
+*{box-sizing:border-box}body{margin:0;font-family:Georgia,'Times New Roman',serif;color:#702044;background:linear-gradient(135deg,#fff5fa,#fce7f3,#fffafd);overflow-x:hidden}
+header{text-align:center;padding:46px 18px 34px;position:relative}
+h1{font-size:clamp(2rem,8vw,4.2rem);margin:8px 0;color:#a21caf}h2{color:#9d174d}
+.sub{font-style:italic;font-size:1.12rem}.pill{display:inline-block;background:#fff;border:1px solid #f3a8ca;border-radius:99px;padding:9px 15px;margin-top:12px}
+nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:0 12px 24px}nav a{color:#9d174d;text-decoration:none;background:white;border:1px solid #f9a8d4;padding:10px 14px;border-radius:999px}
+section{max-width:900px;margin:0 auto 24px;padding:26px 20px;background:#ffffffc9;border:1px solid #fbcfe8;border-radius:24px;box-shadow:0 12px 35px #be185d10}
+.center{text-align:center}.heart{font-size:2rem;animation:pulse 1.5s infinite}@keyframes pulse{50%{transform:scale(1.18)}}.float{position:fixed;bottom:-30px;animation:rise 10s linear infinite;opacity:.55;pointer-events:none}@keyframes rise{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+.photo{width:min(100%,560px);max-height:520px;object-fit:cover;border-radius:20px;border:5px solid white;box-shadow:0 8px 25px #9d174d25}
+.letters{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.letter{border:1px solid #f9a8d4;border-radius:18px;background:#fff7fb;padding:18px;text-align:center}.letter button,.btn{background:#be185d;color:white;border:0;border-radius:999px;padding:11px 16px;cursor:pointer;font-size:1rem}.letter .body{display:none;text-align:left;line-height:1.7;white-space:pre-line}.letter.open .body{display:block}.letter.open .envelope{display:none}
+footer{text-align:center;padding:30px;color:#9d174d}
+#gate{position:fixed;inset:0;background:linear-gradient(145deg,#fce7f3,#fff1f7);z-index:10;display:flex;align-items:center;justify-content:center;padding:20px}
+.gatebox{width:min(420px,100%);text-align:center;background:white;border-radius:26px;padding:28px;border:1px solid #f9a8d4;box-shadow:0 15px 45px #9d174d22}
+input{padding:12px;border:1px solid #f9a8d4;border-radius:12px;width:100%;font-size:1rem;margin:8px 0}small{color:#a16280}
+@media(max-width:500px){section{margin:0 10px 18px;padding:22px 15px}}
+</style></head>
+<body>
+<div id="gate"><div class="gatebox"><div class="heart">💗 🧸 💗</div><h2>Una sorpresa para ti</h2><p>Hay un pequeño mundo hecho con amor esperándote.</p><form id="unlock"><input id="pass" type="password" inputmode="numeric" placeholder="Escribe la contraseña" required><button class="btn">Entrar 💌</button></form><small id="error"></small><p><small>Una página hecha especialmente para Isabela</small></p></div></div>
+<header><div class="heart">♡ 🧸 ♡</div><p class="sub">Para el amor de mi vida</p><h1 id="mainTitle">Mi Isabela 💗</h1><p class="sub">Tú, yo y una vida entera por delante.</p><div class="pill">Juntos desde el 29 de junio de 2024</div></header>
+<nav><a href="#historia">Nuestra historia</a><a href="#recuerdos">Recuerdos</a><a href="#cartas">Cartitas</a><a href="#musica">Nuestra canción</a><a href="#admin">Editar página</a></nav>
+<section id="historia" class="center"><h2>Nuestra historia ✨</h2><p>Desde el 29 de junio de 2024 comenzó una historia que quiero seguir escribiendo contigo. Hemos tenido días bonitos y días difíciles, pero cada recuerdo forma parte de lo que somos.</p><p class="heart">Te amo con toda mi alma. ❤️</p></section>
+<section id="recuerdos" class="center"><h2>Nuestros recuerdos 📸</h2><img class="photo" src="foto1.jpg" alt="Un recuerdo de Axel e Isabela"><p>Un recuerdo nuestro, y todavía nos faltan muchísimos por agregar. 💞</p><p><small>Las fotos adicionales se podrán incorporar en una próxima actualización.</small></p></section>
+<section id="cartas"><h2 class="center">Tres cartitas para ti 💌</h2><p class="center">Toca cada sobre para abrirlo.</p><div class="letters">
+<div class="letter"><div class="envelope"><div style="font-size:2.4rem">💌</div><h3>Para mi princesita 💖</h3><button onclick="openLetter(this)">Abrir carta</button></div><div class="body"><h3>Para mi princesita 💖</h3><p>Para mi princesita, te amoooo con todo mi corazón. Eres única en esta vida y me encanta lo que has hecho conmigo. Me gusta cómo eres y espero que nunca cambies. ¡Te adoro, mi vidaaaa! 💗</p><button onclick="closeLetter(this)">Cerrar</button></div></div>
+<div class="letter"><div class="envelope"><div style="font-size:2.4rem">💌</div><h3>Para mi baby 🫶</h3><button onclick="openLetter(this)">Abrir carta</button></div><div class="body"><h3>Para mi baby 🫶</h3><p>Baby, hemos vivido muchas cosas, buenos y malos momentos. Yo te prometo que nadie podrá separarnos. Te amooloooo y gracias por estar siempre a mi lado. ❤️</p><button onclick="closeLetter(this)">Cerrar</button></div></div>
+<div class="letter"><div class="envelope"><div style="font-size:2.4rem">💌</div><h3>Para mi puchi 💍</h3><button onclick="openLetter(this)">Abrir carta</button></div><div class="body"><h3>Para mi puchi 💍</h3><p>Puchi, solo puedo decirte cuánto espero el día en que nos casemos y vivamos felices por muchos años, hasta viejitos. Siempre sueño con eso porque te amoooo con toda mi alma. ❤️</p><button onclick="closeLetter(this)">Cerrar</button></div></div>
+</div></section>
+<section id="musica" class="center"><h2>Nuestra canción 🎶</h2><p><em>Disfruto</em> — Carla Morrison</p><p>“Nuestra canción”</p><small>Para reproducir la canción completa, agrega un archivo de audio que tengas permiso de usar o un enlace compatible. Esta versión aún no incorpora el audio.</small></section>
+<section id="admin"><h2 class="center">Panel para editar ✍️</h2><p>Esta primera versión es una maqueta para revisar el diseño. El panel de edición en línea, el guardado de cambios, el QR y el enlace público requieren configurar un servicio de publicación y almacenamiento seguro antes de compartirla.</p><p class="center"><button class="btn" onclick="alert('El panel en línea se activará en la versión publicada con almacenamiento seguro.')">Preparar panel de edición</button></p></section>
+<footer><div class="heart">💗</div><p>Hecho con amor para Isabela</p><small>Axel + Isabela · 29.06.2024</small></footer>
+<script>
+document.getElementById('unlock').addEventListener('submit',function(e){e.preventDefault();if(document.getElementById('pass').value==='062429'){document.getElementById('gate').style.display='none';sessionStorage.setItem('unlocked','1')}else{document.getElementById('error').textContent='Esa no es la clave, inténtalo de nuevo 💗'}});
+if(sessionStorage.getItem('unlocked')==='1')document.getElementById('gate').style.display='none';
+function openLetter(b){b.closest('.letter').classList.add('open')}function closeLetter(b){b.closest('.letter').classList.remove('open')}
+for(let i=0;i<12;i++){let s=document.createElement('span');s.className='float';s.textContent=['♡','💗','♥'][i%3];s.style.left=(i*8+2)+'%';s.style.animationDelay=(i%7)+'s';s.style.fontSize=(18+i%3*7)+'px';document.body.appendChild(s)}
+</script></body></html>
